@@ -11,18 +11,25 @@ function populate(data, id) {
         var desc = document.createElement("p");
         desc.setAttribute('class', 'light');
 
+		var link = document.createElement("a");
+        link.setAttribute('class', 'light');
+        link.setAttribute('href', data[i]["url"]);
+
         // Create text nodes
         var nodeName = document.createTextNode(data[i]["name"]);
         var nodeDesc = document.createTextNode(data[i]["desc"]);
+        var nodeLink = document.createTextNode(data[i]["url"]);
         // Get entrys element
         var elementEntrys = document.getElementById(id);
 
         // Append text nodes to elements
         name.appendChild(nodeName);
         desc.appendChild(nodeDesc);
+        link.appendChild(nodeLink);
         // Append elements to xib
         ico.appendChild(name);
         ico.appendChild(desc);
+        ico.appendChild(link);
 		col.appendChild(ico)
         // Append xib to entrys
         elementEntrys.appendChild(col);
