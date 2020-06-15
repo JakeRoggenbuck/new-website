@@ -2,8 +2,11 @@ function populate(data, id) {
     for (var i = 0; i < data.length; i++) {
         var col = document.createElement("div");
         col.setAttribute('class', 'col s12 m4');
+        col.setAttribute('margin-bottom', '100px');
         var ico = document.createElement("div");
         ico.setAttribute('class', 'icon-block');
+        var space = document.createElement("div");
+		space.setAttribute('class', 'space');
 
         var name = document.createElement("h5");
         name.setAttribute('class', 'center');
@@ -30,7 +33,8 @@ function populate(data, id) {
         ico.appendChild(name);
         ico.appendChild(desc);
         ico.appendChild(link);
-		col.appendChild(ico)
+        space.appendChild(ico);
+		col.appendChild(space);
         // Append xib to entrys
         elementEntrys.appendChild(col);
     }
