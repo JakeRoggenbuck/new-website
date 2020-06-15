@@ -1,0 +1,23 @@
+{
+  "name": "newwebsite",
+  "version": "1.0.0",
+  "description": "A new all purpose website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeRoggenbuck/new-website.git"
+  },
+  "author": "Jake Roggenbuck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakeRoggenbuck/new-website/issues"
+  },
+  "homepage": "https://github.com/JakeRoggenbuck/new-website#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
